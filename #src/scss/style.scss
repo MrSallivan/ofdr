@@ -42,9 +42,10 @@ body {
 
 //<ОБОЛОЧКА>===========================================================================================================
 .wrapper {
-	width: 100%;
+	width:$maxWidth + px;
 	min-height: 100%;
 	overflow: hidden;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	&._loaded {
