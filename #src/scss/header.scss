@@ -1,11 +1,180 @@
 //====================================================================================================
 
-
-	// ._container
-	
-
+// ._container
 
 //====================================================================================================
+.header {
+	padding-top: 3.1rem;
+	// .header_shadow
+	&_shadow {
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	}
+	// .header__container
+	&__container {
+	}
+	// .header__top
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+	// .header__bottom
+	&__bottom {
+	}
+}
+
+// ._container
+._container {
+}
+
+.top {
+	// .top_button
+	&_button {
+	}
+	// .top__logozone
+	&__logozone {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	// .top__social
+	&__social {
+	}
+	// .top__callzone
+	&__callzone {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+}
+.logozone {
+	// .logozone__logo
+	&__logo {
+		padding-right: 2.5rem;
+	}
+	// .logozone__text
+	&__text {
+		max-width: 21.8rem;
+		flex-shrink: 1;
+		position: relative;
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 1.6rem;
+		color: #5d5d5d;
+		padding-left: 2.5rem;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 0.2rem;
+			height: 4rem;
+			top: 0.4rem;
+			left: 0;
+			background-color: #89afef;
+		}
+	}
+}
+.logo {
+	// .logo_link
+	&_link {
+		font-size: 6rem;
+		font-weight: 700;
+		line-height: 7.254rem;
+		color: $logo_color;
+	}
+}
+.social {
+	display: flex;
+	align-items: center;
+	// .social__whatsapp
+	&__item {
+		width: 4.3rem;
+		height: 4.3rem;
+		border-radius: 50%;
+		margin-right: 1.8rem;
+		overflow: hidden;
+
+		&_wsp {
+			box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
+		}
+		&_vbr {
+			box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
+		}
+		&_tel {
+			box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+.call {
+	height: 4.4rem;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	a {
+		display: block;
+		color: $textcolor;
+		margin: 0 3rem 0 0;
+	}
+	// .call__numlink
+	&__numlink {
+		position: relative;
+		font-size: 2rem;
+		font-weight: 700;
+
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 1.6rem;
+			height: 1.6rem;
+			background: url(../img/header/icons/call-answer.png) no-repeat;
+			top: 2px;
+			left: -2.4rem;
+		}
+	}
+	// .call__emaillink
+	&__emaillink {
+		font-size: 1.7rem;
+		font-weight: 500;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 1.6rem;
+			height: 1.6rem;
+			background: url(../img/header/icons/mail.png) no-repeat;
+			top: 2px;
+			left: 0.5rem;
+		}
+	}
+}
+
+.header-menu {
+	// .header-menu__icon
+	&__icon {
+	}
+	// .header-menu__link
+	&__link {
+		display: inline-block;
+		color: $textcolor;
+		font-size: 1.6rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		line-height: 1.9rem;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+}
 
 /*
 //Burger

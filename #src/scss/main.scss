@@ -1,0 +1,38 @@
+.main {
+	// .main_button
+	&_button {
+	}
+	// .main__container
+	&__container {
+	}
+	// .main__content
+	&__content {
+		padding-top: 1.5rem;
+		display: flex;
+		justify-content: flex-start;
+	}
+	// .main__col1
+	&__col1 {
+		padding-top: 8rem;
+	}
+	// .main__title
+	&__title {
+		font-weight: 900;
+		font-size: 4rem;
+		line-height: 5.1rem;
+		color: $textcolor;
+	}
+	// .main__subtitle
+	&__subtitle {
+		margin: 2.5rem 0;
+		font-weight: 500;
+		font-size: 2.4rem;
+		line-height: 2.825rem;
+	}
+	// .main__price
+	&__price {
+	}
+	// .main__col2
+	&__col2 {
+	}
+}

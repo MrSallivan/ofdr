@@ -1,17 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html',{
-	"title":"Главная Моя"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
-			<main class="page">
+@@include('_head.html',{
+"title":"Главная Моя"
+})
 
-			</main>
-			@@include('_footer.html',{})
+<body>
+	<div class="wrapper">
+		<div class="ferst-screen">
+			@@include('_header.html',{})
+			<section class="main">
+				<div class="main__container _container">
+					<div class="main__content">
+						<div class="main__col1">
+							<h1 class="main__title">Оформление допусков, удостоверений всех строительных<br> и рабочих
+								специальностей</h1>
+							<div class="main__subtitle">аттестация ИТР
+								<span class="main__price"> от 2500 руб</span>
+							</div>
+							<button class="btn btn_main">заказать</button>
+						</div>
+						<div class="main__col2">
+							<img src="img/main/worker.png" alt="worker_foto" />
+						</div>
+					</div>
+				</div>
+
+			</section>
 		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
-	</body>
+		<main class="page">
+			<section class="docs">
+				<div class="docs__container _container">
+					<div class="docs__content">
+						<div class="docs__title">Какие документы хотите оформить?</div>
+						<div class="docs__items">
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/fireman.svg" alt="fireman" />
+									</div>
+									<div class="docs-item__text">Гражданская
+										оборона и ЧС</div>
+								</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/crane.svg" alt="crane" />
+									</div>
+									<div class="docs-item__text">Работы на
+										высоте</div>
+								</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/excavator.svg" alt="excavator" />
+									</div>
+									<div class="docs-item__text">Дорожно-
+										строительная техника</div>
+								</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/settings.svg" alt="setting" />
+									</div>
+									<div class="docs-item__text">Неразрушающий
+										контроль</div>
+								</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/toxic-waste.svg" alt="toxic-waste" />
+									</div>
+									<div class="docs-item__text">Опасные грузы
+										(ДОПОГ)</div>
+								</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/worker.svg" alt="worker" />
+									</div>
+									<div class="docs-item__text">Охрана труда</div>
+								</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/fire-extinguisher.svg" alt="fire-extinguisher" />
+									</div>
+									<div class="docs-item__text">Пожарно-технический минимум</div>
+								</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/factory.svg" alt="factory" />
+									</div>
+									<div class="docs-item__text">Промышленная безопасность</div>
+								</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/engineer.svg" alt="engineer" />
+									</div>
+									<div class="docs-item__text">Обучение по рабочим профессиям</div>
+								</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/plug.svg" alt="plug" />
+									</div>
+									<div class="docs-item__text">Энергетическая безопасность</div>
+								</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/curve.svg" alt="curve" />
+									</div>
+									<div class="docs-item__text">Безопасность
+										дорожного движения
+									</div>
+							</div>
+							</div>
+							<div class="docs__wrap">
+								<div class="docs-item">
+									<div class="docs-item__img">
+										<img src="img/docs/tracktor.svg" alt="tracktor" />
+									</div>
+									<div class="docs-item__text">Права на
+										спецтехнику
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
 </html>

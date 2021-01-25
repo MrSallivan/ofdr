@@ -19,7 +19,26 @@
 //<BUTTONS (a.btn+tab)>====================================================================================================
 .btn {
 	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 19.5rem;
+	height: 4.4rem;
 	padding: 0px 0px;
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+	box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
+	background: linear-gradient(90deg, #f6bd60 0%, #e88952 100%);
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+	color: $white;
+
+	&_main {
+		background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
+		box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+	}
 	@media (min-width: 992px) {
 		&:hover {
 		}
