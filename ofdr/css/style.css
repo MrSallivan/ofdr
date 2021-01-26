@@ -1061,7 +1061,7 @@ body.ie ._ibg img {
   padding-left: 2.5rem;
 }
 
-.logozone::before {
+.logozone__text::before {
   content: "";
   display: block;
   position: absolute;
@@ -1192,51 +1192,9 @@ body.ie ._ibg img {
           justify-content: space-between;
 }
 
-/*
-//Burger
-.icon-menu {
-	display: none;
-	@media (max-width: $md3+px) {
-		display: block;
-		position: absolute;
-		top: 18px;
-		right: 10px;
-		width: 30px;
-		height: 18px;
-		cursor: pointer;
-		z-index: 5;
-		span {
-			transition: all 0.3s ease 0s;
-			top: calc(50% - 1px);
-			left: 0px;
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-			&:first-child {
-				top: 0px;
-			}
-			&:last-child {
-				top: auto;
-				bottom: 0px;
-			}
-		}
-		&._active {
-			span {
-				transform: scale(0);
-				&:first-child {
-					transform: rotate(-45deg);
-					top: calc(50% - 1px);
-				}
-				&:last-child {
-					transform: rotate(45deg);
-					bottom: calc(50% - 1px);
-				}
-			}
-		}
-	}
+.header-menu__icon {
+  display: none;
 }
-*/
 
 .main__content {
   padding-top: 1.5rem;
@@ -1267,7 +1225,9 @@ body.ie ._ibg img {
 }
 
 .main__price {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 3rem;
 }
 
 .main__col2 {
@@ -1369,11 +1329,38 @@ body.ie ._ibg img {
   ._container {
     max-width: 970px;
   }
+
+  .top__social {
+    margin-right: 2rem;
+  }
+
+  .social__item {
+    width: 3.3rem;
+    height: 3.3rem;
+    margin-right: 0.8rem;
+  }
+
+  .social__item img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .call a {
+    margin: 0 2rem 0 0;
+  }
 }
 
 @media (max-width: 991.98px) {
   ._container {
     max-width: 750px;
+  }
+
+  .btn {
+    width: 12rem;
+    height: 3.5rem;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
   }
 
   .select__title {
@@ -1388,8 +1375,72 @@ body.ie ._ibg img {
     padding-top: 1.5rem;
   }
 
+  .logozone__logo {
+    padding-right: 1rem;
+  }
+
+  .logozone__text {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    width: 12rem;
+    padding-left: 1rem;
+  }
+
+  .logozone__text::before {
+    top: 0.2rem;
+    left: 0;
+    height: 2.1rem;
+  }
+
   .logo_link {
     font-size: 3rem;
+  }
+
+  .social__item {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-right: 0.8rem;
+  }
+
+  .social__item img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .call {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .call__numlink {
+    font-size: 1.5rem;
+  }
+
+  ._no-webp .call__numlink::before{
+    background: url(../img/header/icons/call-answer.png) 0 0/contain no-repeat; }
+
+  .call__numlink::before {
+    width: 1.2rem;
+    height: 1.2rem;
+    left: -2rem;
+  }
+
+  .call__emaillink {
+    font-size: 1.3rem;
+  }
+
+  ._no-webp .call__emaillink::before{
+    background: url(../img/header/icons/mail.png) 0 0/contain no-repeat; }
+
+  .call__emaillink::before {
+    width: 1.2rem;
+    height: 1.2rem;
+    left: 0.1rem;
+  }
+
+  .header-menu__link {
+    font-size: 1.2rem;
   }
 }
 
@@ -1398,6 +1449,58 @@ body.ie ._ibg img {
     max-width: none;
     padding: 0 10px;
   }
+
+  .header-menu__icon {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .header-menu__icon span {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    top: calc(50% - 1px);
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .header-menu__icon span:first-child {
+    top: 0px;
+  }
+
+  .header-menu__icon span:last-child {
+    top: auto;
+    bottom: 0px;
+  }
+
+  .header-menu__icon._active span {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+
+  .header-menu__icon._active span:first-child {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+
+  .header-menu__icon._active span:last-child {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
 }
 
 ._webp .call__numlink::before{ background: url(../img/header/icons/call-answer.webp) no-repeat; }
@@ -1405,3 +1508,13 @@ body.ie ._ibg img {
 ._webp .call__emaillink::before{ background: url(../img/header/icons/mail.webp) no-repeat; }
 
 ._webp .ferst-screen{ background: url(../img/header/fon.webp) right no-repeat, url(../img/header/fon_decor.svg) 5rem 6rem/1300px 3250px no-repeat; }
+
+@media (max-width: 991.98px){
+
+  ._webp .call__numlink::before{ background: url(../img/header/icons/call-answer.webp) 0 0/contain no-repeat; }
+}
+
+@media (max-width: 991.98px){
+
+  ._webp .call__emaillink::before{ background: url(../img/header/icons/mail.webp) 0 0/contain no-repeat; }
+}

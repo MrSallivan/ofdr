@@ -41,6 +41,9 @@
 	}
 	// .top__social
 	&__social {
+		@media (max-width:$md1+px){
+			margin-right: 2rem;
+		}
 	}
 	// .top__callzone
 	&__callzone {
@@ -53,6 +56,9 @@
 	// .logozone__logo
 	&__logo {
 		padding-right: 2.5rem;
+		@media (max-width: $md2+px) {
+			padding-right: 1rem;
+		}
 	}
 	// .logozone__text
 	&__text {
@@ -64,8 +70,14 @@
 		line-height: 1.6rem;
 		color: #5d5d5d;
 		padding-left: 2.5rem;
-	}
-		
+
+		@media (max-width: $md2+px) {
+			font-size: 0.8rem;
+			line-height: 0.8rem;
+			width: 12rem;
+			padding-left: 1rem;
+		}
+
 		&::before {
 			content: "";
 			display: block;
@@ -75,7 +87,14 @@
 			top: 0.4rem;
 			left: 0;
 			background-color: #89afef;
+
+			@media (max-width: $md2+px) {
+				top: 0.2rem;
+				left: 0;
+				height: 2.1rem;
+			}
 		}
+	}
 }
 .logo {
 	// .logo_link
@@ -85,8 +104,8 @@
 		line-height: 7.254rem;
 		color: $logo_color;
 
-	@media (max-width: $md2+px) {
-		font-size: 3rem;
+		@media (max-width: $md2+px) {
+			font-size: 3rem;
 		}
 	}
 }
@@ -100,7 +119,24 @@
 		border-radius: 50%;
 		margin-right: 1.8rem;
 		overflow: hidden;
-
+		@media (max-width:$md1+px){
+			width: 3.3rem;
+			height: 3.3rem;
+			margin-right: 0.8rem;
+			img {
+				max-width: 100%;
+				display: block;
+			}
+		}
+		@media (max-width: $md2+px) {
+			width: 2.8rem;
+			height: 2.8rem;
+			margin-right: 0.8rem;
+			img {
+				max-width: 100%;
+				display: block;
+			}
+		}
 		&_wsp {
 			box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
 		}
@@ -123,16 +159,27 @@
 	flex-direction: column;
 	justify-content: space-between;
 
+	@media (max-width: $md2+px) {
+		justify-content: space-evenly;
+	}
+
 	a {
 		display: block;
 		color: $textcolor;
 		margin: 0 3rem 0 0;
+		@media (max-width:$md1+px){
+			margin: 0 2rem 0 0;
+		}
 	}
 	// .call__numlink
 	&__numlink {
 		position: relative;
 		font-size: 2rem;
 		font-weight: 700;
+
+		@media (max-width: $md2+px) {
+			font-size: 1.5rem;
+		}
 
 		&::before {
 			content: "";
@@ -143,6 +190,12 @@
 			background: url(../img/header/icons/call-answer.png) no-repeat;
 			top: 2px;
 			left: -2.4rem;
+			@media (max-width: $md2+px) {
+				width: 1.2rem;
+				height: 1.2rem;
+				background: url(../img/header/icons/call-answer.png) 0 0 / contain no-repeat;
+				left: -2rem;
+			}
 		}
 	}
 	// .call__emaillink
@@ -150,6 +203,10 @@
 		font-size: 1.7rem;
 		font-weight: 500;
 		position: relative;
+
+		@media (max-width: $md2+px) {
+			font-size: 1.3rem;
+		}
 
 		&::before {
 			content: "";
@@ -160,6 +217,12 @@
 			background: url(../img/header/icons/mail.png) no-repeat;
 			top: 2px;
 			left: 0.5rem;
+			@media (max-width: $md2+px) {
+				width: 1.2rem;
+				height: 1.2rem;
+				background: url(../img/header/icons/mail.png) 0 0 / contain no-repeat;
+				left: 0.1rem;
+			}
 		}
 	}
 }
@@ -176,6 +239,10 @@
 		font-weight: 500;
 		text-transform: uppercase;
 		line-height: 1.9rem;
+
+		@media (max-width:$md2+px){
+			font-size: 1.2rem;
+		}
 	}
 	&__list {
 		display: flex;
@@ -183,9 +250,9 @@
 	}
 }
 
-/*
+
 //Burger
-.icon-menu {
+.header-menu__icon {
 	display: none;
 	@media (max-width: $md3+px) {
 		display: block;
@@ -227,4 +294,4 @@
 		}
 	}
 }
-*/
+

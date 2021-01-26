@@ -35,14 +35,19 @@
 	line-height: 21px;
 	color: $white;
 
+	@media (max-width: $md2+px) {
+		width: 12rem;
+		height: 3.5rem;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 13px;
+	}
+
 	&_main {
 		background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
 		box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
 	}
-	@media (min-width: 992px) {
-		&:hover {
-		}
-	}
+
 	&._fw {
 		width: 100%;
 	}
