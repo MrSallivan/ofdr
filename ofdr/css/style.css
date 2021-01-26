@@ -1061,7 +1061,7 @@ body.ie ._ibg img {
   padding-left: 2.5rem;
 }
 
-.logozone__text::before {
+.logozone::before {
   content: "";
   display: block;
   position: absolute;
@@ -1266,6 +1266,14 @@ body.ie ._ibg img {
   line-height: 2.825rem;
 }
 
+.main__price {
+  font-weight: 700;
+}
+
+.main__col2 {
+  margin: -.5rem 0;
+}
+
 .docs__title {
   font-weight: 800;
   font-size: 3.6rem;
@@ -1374,6 +1382,14 @@ body.ie ._ibg img {
 
   .select__options {
     font-size: 18px;
+  }
+
+  .header {
+    padding-top: 1.5rem;
+  }
+
+  .logo_link {
+    font-size: 3rem;
   }
 }
 
