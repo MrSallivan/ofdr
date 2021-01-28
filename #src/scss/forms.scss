@@ -42,6 +42,13 @@
 		font-size: 12px;
 		line-height: 13px;
 	}
+	@media (max-width:$md4+px){
+		width: 10rem;
+		height: 3.5rem;
+		font-weight: 600;
+		font-size: 10px;
+		line-height: 13px;
+	}
 
 	&_main {
 		background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
@@ -372,6 +379,7 @@ textarea.input {
 				}
 			}
 		}
+		
 		// .quantity__button_plus
 		&_plus {
 			&::before {
