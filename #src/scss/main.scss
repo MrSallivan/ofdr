@@ -1,5 +1,4 @@
 .main {
-	
 	// .main_button
 	&_button {
 	}
@@ -11,10 +10,25 @@
 		padding-top: 1.5rem;
 		display: flex;
 		justify-content: flex-start;
+		@media (max-width: $md2+px) {
+			padding: 1.5rem 1rem 0 1rem;
+			justify-content: space-between;
+		}
+		@media (max-width: $md3+px) {
+			justify-content: space-between;
+		}
+		@media (max-width: $md4+px) {
+			padding-top: 1rem;
+			padding-bottom: 2.5rem;
+		}
 	}
 	// .main__col1
 	&__col1 {
 		padding-top: 8rem;
+
+		@media (max-width: $md4+px) {
+			padding-top: 0;
+		}
 	}
 	// .main__title
 	&__title {
@@ -22,6 +36,10 @@
 		font-size: 4rem;
 		line-height: 5.1rem;
 		color: $textcolor;
+		@media (max-width: $md2+px) {
+			font-size: 3rem;
+			line-height: 4rem;
+		}
 	}
 	// .main__subtitle
 	&__subtitle {
@@ -29,6 +47,10 @@
 		font-weight: 500;
 		font-size: 2.4rem;
 		line-height: 2.825rem;
+		@media (max-width: $md2+px) {
+			font-size: 2rem;
+			line-height: 2.2rem;
+		}
 	}
 	// .main__price
 	&__price {
@@ -38,6 +60,10 @@
 	}
 	// .main__col2
 	&__col2 {
-		margin: -.5rem 0;
+		margin: -0.5rem 0;
+		
+		@media (max-width: $md4+px) {
+			display: none;
+		}
 	}
 }
