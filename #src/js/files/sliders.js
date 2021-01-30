@@ -67,14 +67,21 @@ let slider_about = new Swiper('.edprog__slider', {
 		disableOnInteraction: false,
 	},
 	*/
-	observer: true,
-	observeParents: true,
+	// observer: true,
+	// observeParents: true,
 	slidesPerView: 4,
-	spaceBetween: 50,
-	autoHeight: true,
+	// resistance: false,
+	centerInsufficientSlides: true,
+	// freeMode: true,
+	// centeredSlides: true,
+	// centeredSlidesBounds: true,
+	// centeredSlides: true,
+	// sledesPerGroup: 1;
+	// spaceBetween: 70,
+	autoHeight: false,
 	speed: 800,
-	//touchRatio: 0,
-	//simulateTouch: false,
+	// touchRatio: 0,
+	// simulateTouch: false,
 	//loop: true,
 	//preloadImages: false,
 	//lazy: true,
@@ -82,33 +89,33 @@ let slider_about = new Swiper('.edprog__slider', {
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
+		dynamicBullets: true
 	},
 	// Arrows
 	// navigation: {
 	// 	nextEl: '.about__more .more__item_next',
 	// 	prevEl: '.about__more .more__item_prev',
 	// },
-	/*
+
 	breakpoints: {
 		320: {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
+			slidesPerView: 1
+			
 		},
-		768: {
-			slidesPerView: 2,
-			spaceBetween: 20,
+		768.1: {
+			slidesPerView: 2
+			
 		},
-		992: {
-			slidesPerView: 3,
-			spaceBetween: 20,
+		992.1: {
+			slidesPerView: 3
+			
 		},
-		1268: {
-			slidesPerView: 4,
-			spaceBetween: 30,
-		},
+		1182.1: {
+			slidesPerView: 4
+			
+		}
 	},
-	*/
+
 	on: {
 		lazyImageReady: function () {
 			ibg();

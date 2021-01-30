@@ -187,6 +187,7 @@ body.ie {
 		height: 100%;
 		box-sizing: content-box;
 		display: flex;
+		justify-content: space-between;
 		position: relative;
 	}
 	&.swiper-container-vertical {
