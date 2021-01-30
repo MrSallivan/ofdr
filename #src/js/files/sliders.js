@@ -68,8 +68,8 @@ let slider_about = new Swiper('.edprog__slider', {
 	},
 	*/
 	observer: true,
-	observeParents: false,
-	slidesPerView: 1,
+	observeParents: true,
+	slidesPerView: 4,
 	spaceBetween: 0,
 	autoHeight: true,
 	speed: 800,
