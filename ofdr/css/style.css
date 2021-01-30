@@ -1402,6 +1402,12 @@ body.ie ._ibg img {
       flex-wrap: wrap;
 }
 
+.slider-quality__pagging {
+  width: 10px;
+  height: 10px;
+  background: red;
+}
+
 .edprog-slide {
   display: -webkit-box;
   display: -ms-flexbox;

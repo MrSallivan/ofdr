@@ -59,7 +59,7 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let slider_about = new Swiper('.about__slider', {
+let slider_about = new Swiper('.edprog__slider', {
 	/*
 	effect: 'fade',
 	autoplay: {
@@ -68,7 +68,7 @@ let slider_about = new Swiper('.about__slider', {
 	},
 	*/
 	observer: true,
-	observeParents: true,
+	observeParents: false,
 	slidesPerView: 1,
 	spaceBetween: 0,
 	autoHeight: true,
@@ -79,10 +79,10 @@ let slider_about = new Swiper('.about__slider', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.slider-quality__pagging',
-	//	clickable: true,
-	//},
+	pagination: {
+		el: '.slider-quality__pagging',
+		clickable: true,
+	},
 	// Arrows
 	navigation: {
 		nextEl: '.about__more .more__item_next',

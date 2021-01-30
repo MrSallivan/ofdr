@@ -15,6 +15,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		
 		@media (max-width:$md1+px){
 			justify-content: space-around;
 		}
@@ -23,7 +24,11 @@
 	&__slide {
 	}
 }
-
+.slider-quality__pagging {
+	width: 10px;
+	height: 10px;
+	background: red;
+}
 .edprog-slide {
 	display: flex;
 	max-width: 265px;
@@ -32,6 +37,7 @@
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
 	color: inherit;
 	margin-bottom: 2rem;
+	
 	&:hover {
 		box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.0677994);
 	}
