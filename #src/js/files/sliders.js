@@ -70,7 +70,7 @@ let slider_about = new Swiper('.edprog__slider', {
 	observer: true,
 	observeParents: true,
 	slidesPerView: 4,
-	spaceBetween: 0,
+	spaceBetween: 50,
 	autoHeight: true,
 	speed: 800,
 	//touchRatio: 0,
@@ -80,14 +80,14 @@ let slider_about = new Swiper('.edprog__slider', {
 	//lazy: true,
 	// Dotts
 	pagination: {
-		el: '.slider-quality__pagging',
+		el: '.swiper-pagination',
 		clickable: true,
 	},
 	// Arrows
-	navigation: {
-		nextEl: '.about__more .more__item_next',
-		prevEl: '.about__more .more__item_prev',
-	},
+	// navigation: {
+	// 	nextEl: '.about__more .more__item_next',
+	// 	prevEl: '.about__more .more__item_prev',
+	// },
 	/*
 	breakpoints: {
 		320: {

@@ -1402,10 +1402,21 @@ body.ie ._ibg img {
       flex-wrap: wrap;
 }
 
-.slider-quality__pagging {
+.swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-pagination span {
+  display: block;
   width: 10px;
   height: 10px;
-  background: red;
+  margin: 3px;
+  background: green;
 }
 
 .edprog-slide {
