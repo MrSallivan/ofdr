@@ -69,16 +69,16 @@ let slider_about = new Swiper('.edprog__slider', {
 	*/
 	// observer: true,
 	// observeParents: true,
-	slidesPerView: 4,
+	slidesPerView: 1,
 	// resistance: false,
-	centerInsufficientSlides: true,
+	// centerInsufficientSlides: true,
 	// freeMode: true,
 	// centeredSlides: true,
 	// centeredSlidesBounds: true,
 	// centeredSlides: true,
 	// sledesPerGroup: 1;
-	// spaceBetween: 70,
-	autoHeight: false,
+	spaceBetween: 27,
+	autoHeight: true,
 	speed: 800,
 	// touchRatio: 0,
 	// simulateTouch: false,
@@ -98,20 +98,21 @@ let slider_about = new Swiper('.edprog__slider', {
 
 	breakpoints: {
 		320: {
-			slidesPerView: 2
-			
+			slidesPerView: 1
+
 		},
 		768.1: {
-			slidesPerView: 3
-			
+			slidesPerView: 2
+
 		},
 		992.1: {
-			slidesPerView: 4
-			
+			slidesPerView: 3,
+			spaceBetween: 15
+
 		},
-		1182.1: {
+		11170.1: {
 			slidesPerView: 4
-			
+
 		}
 	},
 

@@ -1396,15 +1396,14 @@ body.ie ._ibg img {
   margin: 50px 0 30px 0;
 }
 
+.edprog__slider {
+  max-width: 1140px;
+  padding: 0 15px;
+  padding-bottom: 10px;
+}
+
 .edprog-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
   max-width: 265px;
-  max-height: 100%;
-  min-height: 366px;
-  margin: 14.5px;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
           box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
