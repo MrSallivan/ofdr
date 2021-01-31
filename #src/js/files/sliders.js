@@ -82,14 +82,13 @@ let slider_about = new Swiper('.edprog__slider', {
 	speed: 800,
 	// touchRatio: 0,
 	// simulateTouch: false,
-	//loop: true,
+	loop: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
 	pagination: {
 		el: '.swiper-pagination',
-		clickable: true,
-		dynamicBullets: true
+		clickable: true
 	},
 	// Arrows
 	// navigation: {
@@ -99,15 +98,15 @@ let slider_about = new Swiper('.edprog__slider', {
 
 	breakpoints: {
 		320: {
-			slidesPerView: 1
-			
-		},
-		768.1: {
 			slidesPerView: 2
 			
 		},
-		992.1: {
+		768.1: {
 			slidesPerView: 3
+			
+		},
+		992.1: {
+			slidesPerView: 4
 			
 		},
 		1182.1: {

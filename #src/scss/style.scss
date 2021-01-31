@@ -37,8 +37,8 @@ $maincolor: #e98c53;
 $grey: #f6f6f6;
 $themeColor: #007aff !default;
 $colors: (
-  'white': #ffffff,
-  'black': #000000,
+	"white": #ffffff,
+	"black": #000000,
 ) !default;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "null";
@@ -50,6 +50,8 @@ body {
 	&._lock {
 		overflow: hidden;
 	}
+	
+	
 }
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
@@ -62,6 +64,7 @@ body {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	background: url(../img/header/fon_decor.svg) 5rem 6rem / 1300px auto no-repeat;
 	&._loaded {
 	}
 }
@@ -108,8 +111,8 @@ body {
 	flex: 1 1 auto;
 }
 .ferst-screen {
-	background: url(../img/header/fon.png) right no-repeat,
-		url(../img/header/fon_decor.svg) 5rem 6rem / 1300px 3250px no-repeat;
+	background: url(../img/header/fon.png) right no-repeat;
+	// url(../img/header/fon_decor.svg) 5rem 6rem / 1300px 3250px no-repeat;
 }
 //===================================================================================================================================
 
