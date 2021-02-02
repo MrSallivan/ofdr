@@ -1,0 +1,23 @@
+.pagetitle {
+	font-weight: 800;
+	font-size: 3.6rem;
+	line-height: 4.59rem;
+	text-align: center;
+
+	&_doc {
+		padding-top: 4.7rem;
+		padding-bottom: 4.7rem;
+
+		@media (max-width: $md3+px) {
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
+	}
+	&_edprog {
+		margin: 50px 0 30px 0;
+	}
+	&_example {
+		padding-top: 4.7rem;
+		padding-bottom: 4.7rem;
+	}
+}

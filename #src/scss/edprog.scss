@@ -1,70 +1,29 @@
 .edprog {
-	
 	// .edprog__container
 	&__container {
-	
-		
+		margin-bottom: 7rem;
 	}
-	// .edprog__title
-	&__title {
-		font-weight: 800;
-		font-size: 36px;
-		line-height: 46px;
-		text-align: center;
-		margin: 50px 0 30px 0;
-	}
+
 	// .edprog__slider
 	&__slider {
-		// display: flex;
-		// justify-content: space-between;
-		// flex-wrap: wrap;
-		// border: 1px solid red;
-		// min-width: 0;
-		// @media (max-width: $md1+px) {
-		// 	justify-content: space-around;
-		// }
-		max-width: 1140px;
-		padding: 0 15px;
-		padding-bottom: 10px;
 	}
 	// .edprog__slide
 	&__slide {
-		
 	}
 }
-// .swiper-pagination {
-// 	display: flex;
-// 	justify-content: center;
-// 	span {
-// 		display: block;
-// 		width: 12px;
-// 		height: 12px;
-// 		margin: 9px;
-// 		background: #E4E4E4;
-// 		border: 2px solid #84AAED;
-// 		border-radius: 50%;
-// 	}
-// }
 
 .edprog-slide {
-	// display: flex;
-	// width: 100%;
-	max-width: 265px;
-	// height: 100%;
-	// min-height: 366px;;
-	// margin: 14.5px;
-	
 	background: #ffffff;
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
 	color: inherit;
+	display: flex;
 	// margin-bottom: 2rem;
-	
+
 	&:hover {
 		box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.0677994);
 	}
 	// .edprog-slide__col
 	&__col {
-		
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -74,6 +33,17 @@
 	// .edprog-slide__image
 	&__image {
 		margin-bottom: 1.5rem;
+		width: 215px;
+		height: 149px;
+		img {
+			display: block;
+			width: 100%;
+
+			height: 100%;
+
+			object-fit: cover;
+			object-position: center;
+		}
 	}
 	// .edprog-slide__title
 	&__title {

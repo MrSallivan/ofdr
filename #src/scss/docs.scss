@@ -1,5 +1,4 @@
 .docs {
-	
 	// .docs__container
 	&__container {
 	}
@@ -7,33 +6,20 @@
 	&__content {
 		padding-bottom: 2rem;
 	}
-	// .docs__title
-	&__title {
-		font-weight: 800;
-		font-size: 3.6rem;
-		line-height: 4.59rem;
-		text-align: center;
-		padding-top: 4.7rem;
-		padding-bottom: 8rem;
-		@media (max-width:$md3+px){
-			padding-top: 3rem;
-		padding-bottom: 3rem;
-		}
-	}
+
 	// .docs__items
 	&__items {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		margin: 0 -1.5rem;
-		@media (max-width:$md2+px){
+		@media (max-width: $md2+px) {
 			justify-content: space-around;
 		}
-		
 	}
 	&__wrap {
 		padding: 1.5rem;
-		@media (max-width:$md3+px){
+		@media (max-width: $md3+px) {
 			padding: 1rem;
 		}
 	}

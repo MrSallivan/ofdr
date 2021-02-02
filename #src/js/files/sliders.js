@@ -60,69 +60,48 @@ if (sliderScrollItems.length > 0) {
 function sliders_bild_callback(params) { }
 
 let slider_about = new Swiper('.edprog__slider', {
-	/*
-	effect: 'fade',
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-	*/
-	// observer: true,
-	// observeParents: true,
 	slidesPerView: 1,
-	// resistance: false,
-	// centerInsufficientSlides: true,
-	// freeMode: true,
-	// centeredSlides: true,
-	// centeredSlidesBounds: true,
-	// centeredSlides: true,
-	// sledesPerGroup: 1;
-	spaceBetween: 27,
-	autoHeight: true,
-	speed: 800,
-	// touchRatio: 0,
-	// simulateTouch: false,
 	loop: true,
-	//preloadImages: false,
-	//lazy: true,
-	// Dotts
+	spaceBetween: 27,
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true
 	},
-	// Arrows
-	// navigation: {
-	// 	nextEl: '.about__more .more__item_next',
-	// 	prevEl: '.about__more .more__item_prev',
-	// },
 
 	breakpoints: {
-		320: {
-			slidesPerView: 1
-
-		},
-		768.1: {
-			slidesPerView: 2
-
-		},
 		992.1: {
 			slidesPerView: 3,
-			spaceBetween: 15
-
 		},
-		11170.1: {
-			slidesPerView: 4
-
+		1154: {
+			slidesPerView: 4,
+			spaceBetween: 27,
 		}
 	},
-
 	on: {
 		lazyImageReady: function () {
 			ibg();
 		},
 	}
-	// And if we need scrollbar
-	//scrollbar: {
-	//	el: '.swiper-scrollbar',
-	//},
+
 });
+
+let slider_about1 = new Swiper('.swiper-container1', {
+	// direction: 'horizontal',
+	slidesPerView: 4,
+	spaceBetween: 27.5,
+
+},
+
+
+	navigation: {
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+},
+	on: {
+	lazyImageReady: function () {
+		ibg();
+	},
+}
+
+});
+
