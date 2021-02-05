@@ -1534,6 +1534,11 @@ body.ie ._ibg img {
   padding-bottom: 4.7rem;
 }
 
+.pagetitle_news {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
 .example {
   background-color: #f6f6f6;
   padding: 0 10px;
@@ -1580,6 +1585,61 @@ body.ie ._ibg img {
   left: -20px;
   z-index: 10;
   cursor: pointer;
+}
+
+.news__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  margin-right: 30px;
+}
+
+.news__col:last-child {
+  margin-right: 0;
+}
+
+.fullnews {
+  background-color: #FAFAFB;
+}
+
+.fullnews__content {
+  padding: 4.1rem 0 0 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../img/news/1141.svg) right/50% 100% no-repeat;
+}
+
+.fullnews__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.fullnews__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+.fullnews__title_blue {
+  color: #86ADEF;
+}
+
+.fullnews__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  padding-bottom: 8rem;
 }
 
 .page {
