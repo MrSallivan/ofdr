@@ -90,18 +90,15 @@ let slider_about1 = new Swiper('.swiper-container1', {
 	slidesPerView: 4,
 	spaceBetween: 27.5,
 
-},
-
-
 	navigation: {
-	nextEl: '.swiper-button-next',
-	prevEl: '.swiper-button-prev',
-},
-	on: {
-	lazyImageReady: function () {
-		ibg();
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
-}
-
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
 });
+
 
