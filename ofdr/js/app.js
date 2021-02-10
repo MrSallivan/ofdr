@@ -91,7 +91,8 @@ let slider_about = new Swiper('.edprog__slider', {
 let slider_about1 = new Swiper('.swiper-container1', {
 	// direction: 'horizontal',
 	slidesPerView: 4,
-	spaceBetween: 27.5,
+	spaceBetween: 40,
+	loop: false,
 
 	navigation: {
 		nextEl: '.swiper-button-next',

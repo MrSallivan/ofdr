@@ -204,6 +204,17 @@ body._lock {
   width: 100%;
 }
 
+.btn_allshow {
+  color: #6d81cc;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #6d81cc;
+  margin: 0 auto;
+  display: block;
+  margin-top: 4.5rem;
+}
+
 .select {
   position: relative;
 }
@@ -1241,6 +1252,210 @@ body.ie ._ibg img {
   display: none;
 }
 
+.footer {
+  background: #333333;
+}
+
+.footer__wrap {
+  padding-top: 5.5rem;
+  padding-bottom: 3rem;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.3%;
+          flex: 1 1 33.3%;
+  margin-right: 30px;
+}
+
+.footer__col:last-child {
+  margin-right: 0;
+}
+
+.footer__copyright {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 60px;
+  color: #565656;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #4e4e4e;
+}
+
+.footer__logo {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 74px;
+  color: rgba(255, 255, 255, 0.12653) !important;
+}
+
+.col {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.col a {
+  color: #ffffff;
+}
+
+.col__title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 27px;
+}
+
+.col__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.col__item-link {
+  margin: 5px 0;
+}
+
+.col__item {
+  display: inline;
+}
+
+.social-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.social-footer__link {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+._no-webp .social-footer__link_tel::before{
+  background: url(../img/footer/telegram.png) center/contain no-repeat; }
+
+.social-footer__link_tel::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  display: block;
+  margin-right: 13px;
+}
+
+._no-webp .social-footer__link_vib::before{
+  background: url(../img/footer/viber-logo.png) center/contain no-repeat; }
+
+.social-footer__link_vib::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  display: block;
+  margin-right: 13px;
+}
+
+._no-webp .social-footer__link_wht::before{
+  background: url(../img/footer/whatsapp-logo.png) center/contain no-repeat; }
+
+.social-footer__link_wht::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  display: block;
+  margin-right: 13px;
+}
+
+.footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-contact__tel {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+._no-webp .footer-contact__tel::before{
+  background: url(../img/footer/call-answer.png) center/contain no-repeat; }
+
+.footer-contact__tel::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  display: block;
+  margin-right: 13px;
+}
+
+.footer-contact__email {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+._no-webp .footer-contact__email::before{
+  background: url(../img/footer/mail.png) center/contain no-repeat; }
+
+.footer-contact__email::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  display: block;
+  margin-right: 13px;
+}
+
+.btn_footer {
+  margin-bottom: 5rem;
+}
+
 .main__content {
   padding-top: 1.5rem;
   display: -webkit-box;
@@ -1541,26 +1756,25 @@ body.ie ._ibg img {
 
 .example {
   background-color: #f6f6f6;
-  padding: 0 10px;
+  padding: 0 10px 7rem;
+}
+
+.example__container {
+  position: relative;
 }
 
 .example .swiper-container1 {
   max-width: 1024px;
   margin: 0 auto;
   overflow: hidden;
-  border: 0.5px red solid;
 }
 
 .example .swiper-slide img {
+  width: 223px;
+  height: 306px;
   display: block;
-  width: 100%;
-  max-width: 223px;
-  height: 100%;
-  max-height: 306px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .example .swiper-wrapper {
@@ -1569,22 +1783,24 @@ body.ie ._ibg img {
   display: flex;
 }
 
-.swiper-button-next {
+.example .swiper-button-next {
   display: block;
   position: absolute;
-  top: calc(50% - 39px);
-  left: -10px;
-  z-index: 10;
+  top: calc(65% - 39px);
+  right: 0;
   cursor: pointer;
 }
 
-.swiper-button-prev {
+.example .swiper-button-prev {
   display: block;
   position: absolute;
-  top: calc(50% - 39px);
-  left: -20px;
-  z-index: 10;
+  top: calc(65% - 39px);
+  left: 0;
   cursor: pointer;
+}
+
+.news {
+  padding-bottom: 7rem;
 }
 
 .news__row {
@@ -1614,10 +1830,21 @@ body.ie ._ibg img {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 26.2rem;
           flex: 0 1 26.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 343px;
   margin-right: 3rem;
   padding: 27px 23px 27px 23px;
   -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
           box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.news__card-wrapper:hover {
+  -webkit-box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.1);
 }
 
 .news__card-wrapper:last-child {
@@ -1671,6 +1898,7 @@ body.ie ._ibg img {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .card__image {
@@ -1694,7 +1922,7 @@ body.ie ._ibg img {
   font-size: 1.4rem;
   line-height: 1.648rem;
   color: #ababab;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .card__title {
@@ -1702,7 +1930,7 @@ body.ie ._ibg img {
   font-size: 1.4rem;
   line-height: 1.6rem;
   color: #333333;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
 }
 
 .card__text {
@@ -2088,6 +2316,16 @@ body.ie ._ibg img {
 ._webp .call__numlink::before{ background: url(../img/header/icons/call-answer.webp) no-repeat; }
 
 ._webp .call__emaillink::before{ background: url(../img/header/icons/mail.webp) no-repeat; }
+
+._webp .social-footer__link_tel::before{ background: url(../img/footer/telegram.webp) center/contain no-repeat; }
+
+._webp .social-footer__link_vib::before{ background: url(../img/footer/viber-logo.webp) center/contain no-repeat; }
+
+._webp .social-footer__link_wht::before{ background: url(../img/footer/whatsapp-logo.webp) center/contain no-repeat; }
+
+._webp .footer-contact__tel::before{ background: url(../img/footer/call-answer.webp) center/contain no-repeat; }
+
+._webp .footer-contact__email::before{ background: url(../img/footer/mail.webp) center/contain no-repeat; }
 
 ._webp .edprog-slide__subtext::after{ background: url(../img/edprog/pics.webp) 0 0/contain no-repeat; }
 
