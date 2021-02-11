@@ -2,17 +2,18 @@ let btn = document.querySelector('._load-more')
 btn.addEventListener('click', function (event) {
 	const btnclick = event.target
 	console.log(btnclick)
-	ajax({
-		url:'../news.html',
-		type: 'GET',
-		beforeSend: function(){
-			btn.setAttribute('disabled')
-		},
-		success: function(response){
+	let xhttp = new XMLHttpRequest()
 
-		},
-		error: function(){
-			alert('error')
+	xhttp.onreadystatechange = function () {
+		if (this.readyState == 4 && this.status == 200) {
+			myFunction(this.responseText)
 		}
-	})
+	}
+	xhttp.open('GET', '../news.html', true)
+	xhttp.send()
+
+
+	function myFunction(data) {
+		console.log(data)
+	}
 })
