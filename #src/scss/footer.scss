@@ -52,9 +52,15 @@
 	}
 	// .col_services
 	&_services {
+		@media (max-width:$md4+px){
+			display: none;
+		}
 	}
 	// .col_menu
 	&_menu {
+		@media (max-width:$md4+px){
+			display: none;
+		}
 	}
 	// .col_write-us
 	&_write-us {
@@ -71,12 +77,18 @@
 		font-size: 22px;
 		line-height: 27px;
 		margin-bottom: 27px;
+		@media (max-width:$md4+px){
+			text-align: center;
+		}
 	}
 	// .col__list
 	&__list {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		@media (max-width:$md4+px){
+			align-items:center;
+		}
 	}
 	// .col__item-link
 	&__item-link {

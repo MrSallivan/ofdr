@@ -1,6 +1,12 @@
 function email_test(input) {
 	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 }
+let btn = document.querySelector('._load-more')
+btn.addEventListener('click', function (event) {
+	const btnclick = event.target
+	console.log(btnclick)
+	do
+})
 //BildSlider
 let sliders = document.querySelectorAll('._swiper');
 if (sliders) {
@@ -90,9 +96,29 @@ let slider_about = new Swiper('.edprog__slider', {
 
 let slider_about1 = new Swiper('.swiper-container1', {
 	// direction: 'horizontal',
-	slidesPerView: 4,
+	slidesPerView: 1,
 	spaceBetween: 40,
+	centerInsufficientSlides: true,
 	loop: false,
+	breakpoints: {
+		320.1: {
+			centerInsufficientSlides: true,
+			slidesPerView: 1,
+		},
+		480.1: {
+			slidesPerView: 2,
+			centerInsufficientSlides: true,
+		},
+		992.1: {
+			slidesPerView: 3,
+			centerInsufficientSlides: true,
+		},
+		1154: {
+			slidesPerView: 4,
+			spaceBetween: 40,
+			centerInsufficientSlides: true,
+		},
+	},
 
 	navigation: {
 		nextEl: '.swiper-button-next',
