@@ -1809,6 +1809,11 @@ body.ie ._ibg img {
   display: flex;
 }
 
+.news__row_full {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .news__col {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
@@ -1998,6 +2003,13 @@ body.ie ._ibg img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .news__row_full {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   .news__col {

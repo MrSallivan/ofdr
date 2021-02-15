@@ -2,23 +2,25 @@ function email_test(input) {
 	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 }
 let btn = document.querySelector('._load-more')
+
 btn.addEventListener('click', function (event) {
-	const btnclick = event.target
-	console.log(btnclick)
-	let xhttp = new XMLHttpRequest()
 
-	xhttp.onreadystatechange = function () {
-		if (this.readyState == 4 && this.status == 200) {
-			myFunction(this.responseText)
+	let request = new XMLHttpRequest();
+	request.open('GET', 'news.html');
+
+	request.addEventListener('readystatechange', function () {
+
+		if (request.readyState === 4 && request.status === 200) {
+
+			let block = document.body.querySelector('.morenews')
+			let content = request.response
+			console.log(content)
+			block.innerHTML = content
 		}
-	}
-	xhttp.open('GET', '../news.html', true)
-	xhttp.send()
 
 
-	function myFunction(data) {
-		console.log(data)
-	}
+	})
+	request.send()
 })
 //BildSlider
 let sliders = document.querySelectorAll('._swiper');

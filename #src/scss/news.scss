@@ -12,6 +12,12 @@
 		@media (max-width: $md1+px) {
 			flex-direction: column;
 		}
+		&_full {
+			@media (max-width: $md1+px) {
+				flex-direction: row;
+			}
+			flex-wrap: wrap;
+		}
 	}
 	// .news__col
 	&__col {
@@ -34,7 +40,7 @@
 		@media (max-width: $md1+px) {
 			justify-content: center;
 		}
-		@media (max-width:$md4+px){
+		@media (max-width: $md4+px) {
 			flex-wrap: wrap;
 		}
 	}
@@ -54,10 +60,10 @@
 		&:last-child {
 			margin-right: 0;
 		}
-		@media (max-width:$md4+px){
+		@media (max-width: $md4+px) {
 			margin-right: 0;
 			margin-bottom: 20px;
-			&:last-child{
+			&:last-child {
 				margin-bottom: 0;
 			}
 		}
