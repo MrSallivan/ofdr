@@ -23,13 +23,17 @@
 }
 
 .guarantees-item {
+	display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	// justify-content: space-between;
 	width: 100%;
 	max-width: 26.2rem;
+
 	// .guarantees-item__col
 	&__col {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
 		align-items: center;
 	}
 	// .guarantees-item__image
@@ -47,6 +51,11 @@
 		img {
 			display: block;
 		}
+	}
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 	// .guarantees-item__title
 	&__title {
