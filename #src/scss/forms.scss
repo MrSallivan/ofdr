@@ -34,6 +34,9 @@
 	font-size: 18px;
 	line-height: 21px;
 	color: $white;
+	&:hover {
+		box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.850503);
+	}
 
 	@media (max-width: $md2+px) {
 		width: 12rem;
@@ -53,6 +56,9 @@
 	&_main {
 		background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
 		box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+		&:hover {
+			box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.854846);
+		}
 	}
 
 	&._fw {

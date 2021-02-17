@@ -1,0 +1,39 @@
+.bread-crumbs {
+	display: flex;
+	justify-content: flex-start;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	color: #7d7d7d;
+	margin-top: 2.5rem;
+
+	a:hover {
+		text-decoration-line: underline;
+		color: #86afef;
+		cursor: pointer;
+	}
+	a:visited {
+		color: #7d7d7d;
+		&:hover {
+			text-decoration-line: underline;
+			color: #86afef;
+		}
+	}
+
+	// .bread-crumbs__item
+	&__item {
+		display: block;
+		display: flex;
+		align-items: center;
+		&:first-child::before {
+			display: none;
+		}
+		&::before {
+			content: " ";
+			width: 5px;
+			height: 2px;
+			background: #7d7d7d;
+			margin: 0 5px;
+		}
+	}
+}

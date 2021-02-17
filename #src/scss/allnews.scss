@@ -1,0 +1,15 @@
+.allnews {
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 0 -2rem;
+		padding-bottom: 4.5rem;
+	}
+	.news__card-wrapper {
+		margin: 1rem;
+	}
+	@media (max-width: $md3+px) {
+		padding: 0 20px;
+	}
+}

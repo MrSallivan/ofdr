@@ -159,6 +159,10 @@ body._lock {
   background: url(../img/header/fon_decor.svg) 5rem 6rem/1300px auto no-repeat;
 }
 
+.wrapper_no-fon {
+  background: none;
+}
+
 ._container {
   max-width: 1140px;
   margin: 0 auto;
@@ -192,12 +196,22 @@ body._lock {
   color: #ffffff;
 }
 
+.btn:hover {
+  -webkit-box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.850503);
+          box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.850503);
+}
+
 .btn_main {
   background: -webkit-gradient(linear, left top, right top, from(#87aff1), color-stop(100%, #6c80cb), to(#6c80cb));
   background: -o-linear-gradient(left, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
   background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
   -webkit-box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
           box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+}
+
+.btn_main:hover {
+  -webkit-box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.854846);
+          box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.854846);
 }
 
 .btn._fw {
@@ -1078,6 +1092,12 @@ body.ie ._ibg img {
           justify-content: space-between;
 }
 
+.header_no-fon {
+  background: #f6f6f6;
+  padding-bottom: 1.5rem;
+  margin-bottom: 0;
+}
+
 .top__logozone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1238,6 +1258,10 @@ body.ie ._ibg img {
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1.9rem;
+}
+
+.header-menu__link:hover {
+  text-shadow: 2px 2px 5px #86afef;
 }
 
 .header-menu__list {
@@ -1755,6 +1779,12 @@ body.ie ._ibg img {
   padding-bottom: 3rem;
 }
 
+.pagetitle_allnews {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: left;
+}
+
 .example {
   background-color: #f6f6f6;
   padding: 0 10px 7rem;
@@ -1971,6 +2001,120 @@ body.ie ._ibg img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.allnews__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 -2rem;
+  padding-bottom: 4.5rem;
+}
+
+.allnews .news__card-wrapper {
+  margin: 1rem;
+}
+
+.pagging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.pagging__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagging__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 28px;
+  height: 28px;
+  color: #d0d0d0;
+  border: 2px solid #d0d0d0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 5px;
+}
+
+.pagging__item:hover {
+  border: 2px solid #87b0ee;
+  color: #87b0ee;
+  cursor: pointer;
+}
+
+.bread-crumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #7d7d7d;
+  margin-top: 2.5rem;
+}
+
+.bread-crumbs a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #86afef;
+  cursor: pointer;
+}
+
+.bread-crumbs a:visited {
+  color: #7d7d7d;
+}
+
+.bread-crumbs a:visited:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #86afef;
+}
+
+.bread-crumbs__item {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bread-crumbs__item:first-child::before {
+  display: none;
+}
+
+.bread-crumbs__item::before {
+  content: " ";
+  width: 5px;
+  height: 2px;
+  background: #7d7d7d;
+  margin: 0 5px;
 }
 
 .page {
@@ -2284,6 +2428,10 @@ body.ie ._ibg img {
   .pagetitle_doc {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .allnews {
+    padding: 0 20px;
   }
 }
 
