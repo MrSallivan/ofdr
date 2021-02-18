@@ -1,0 +1,86 @@
+.certifications {
+	// .certifications__cercard
+	&__cercard {
+	}
+	// .certifications__content
+	&__content {
+	}
+}
+.cercard {
+	// .cercard__row
+	&__row {
+		display: flex;
+		justify-content: flex-start;
+	}
+	// .cercard__col
+	&__col {
+	}
+	// .cercard__left-col
+	&__left-col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 188px;
+	}
+	// .cercard__coastext
+	&__coastext {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 18px;
+		text-align: center;
+		color: $textcolor;
+	}
+	// .cercard__coast
+	&__coast {
+		position: relative;
+		font-weight: 800;
+		font-size: 36px;
+		line-height: 44px;
+		text-align: center;
+		color: #87b0ee;
+		padding-bottom: 0.5rem;
+
+		span {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background: #87b0ee;
+			top: 49px;
+		}
+	}
+	// .cercard__text
+	&__text {
+		margin-top: 2.5rem;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 18px;
+		text-align: center;
+		color: $textcolor;
+
+		span {
+			display: block;
+			line-height: 24px;
+			&:first-child {
+				margin-top: 10px;
+			}
+			&:last-child {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	// .cercard__right-col
+	&__right-col {
+	}
+	// .cercard__title
+	&__title {
+	}
+	// .cercard__contenttext
+	&__contenttext {
+	}
+}
+.btn {
+	// .btn_cer
+	&_cer {
+	}
+}
