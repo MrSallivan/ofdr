@@ -229,6 +229,21 @@ body._lock {
   margin-top: 4.5rem;
 }
 
+.btn_cer {
+  width: 18.8rem;
+  height: 5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#87aff1), color-stop(100%, #6c80cb), to(#6c80cb));
+  background: -o-linear-gradient(left, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
+  background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
+  -webkit-box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+          box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+}
+
+.btn_cer:hover {
+  -webkit-box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.854846);
+          box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.854846);
+}
+
 .select {
   position: relative;
 }
