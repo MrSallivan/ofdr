@@ -11,6 +11,9 @@
 	&__row {
 		display: flex;
 		justify-content: flex-start;
+		padding: 35px 0 50px 35px;
+		background-color: #fafafb;
+		background: url(../img/certification/fon_cercard.png) 0 0/100% 100% no-repeat;
 	}
 	// .cercard__col
 	&__col {
@@ -71,12 +74,27 @@
 	}
 	// .cercard__right-col
 	&__right-col {
+		margin-left: 75px;
+		padding-top: 25px;
 	}
 	// .cercard__title
 	&__title {
+		font-weight: 800;
+		font-size: 40px;
+		line-height: 51px;
+		color: $textcolor;
+		text-align: left;
+		width: 60rem;
+		margin-bottom: 2.5rem;
 	}
 	// .cercard__contenttext
 	&__contenttext {
+		text-align: left;
+		font-weight: 500;
+		font-size: 17px;
+		line-height: 26px;
+		color: $textcolor;
+		width: 48.8rem;
 	}
 }
 .btn {

@@ -2154,6 +2154,9 @@ body.ie ._ibg img {
   color: #86afef;
 }
 
+._no-webp .cercard__row{
+  background: url(../img/certification/fon_cercard.png) 0 0/100% 100% no-repeat; }
+
 .cercard__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2161,6 +2164,8 @@ body.ie ._ibg img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding: 35px 0 50px 35px;
+  background-color: #fafafb;
 }
 
 .cercard__left-col {
@@ -2224,6 +2229,30 @@ body.ie ._ibg img {
 
 .cercard__text span:last-child {
   margin-bottom: 20px;
+}
+
+.cercard__right-col {
+  margin-left: 75px;
+  padding-top: 25px;
+}
+
+.cercard__title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 51px;
+  color: #333333;
+  text-align: left;
+  width: 60rem;
+  margin-bottom: 2.5rem;
+}
+
+.cercard__contenttext {
+  text-align: left;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: #333333;
+  width: 48.8rem;
 }
 
 .page {
@@ -2676,6 +2705,8 @@ body.ie ._ibg img {
 ._webp .footer-contact__email::before{ background: url(../img/footer/mail.webp) center/contain no-repeat; }
 
 ._webp .edprog-slide__subtext::after{ background: url(../img/edprog/pics.webp) 0 0/contain no-repeat; }
+
+._webp .cercard__row{ background: url(../img/certification/fon_cercard.webp) 0 0/100% 100% no-repeat; }
 
 ._webp .ferst-screen{ background: url(../img/header/fon.webp) right no-repeat; }
 
