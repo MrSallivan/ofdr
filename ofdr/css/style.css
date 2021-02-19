@@ -2154,6 +2154,42 @@ body.ie ._ibg img {
   color: #86afef;
 }
 
+.certifications__content {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  padding-bottom: 5rem;
+}
+
+.certifications__content p:first-child {
+  margin-top: 35px;
+}
+
+.certifications__content h2 {
+  margin: 20px 0 15px 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.certifications__content ul {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.certifications__content ul li {
+  margin: 10px 0 10px 50px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  list-style-type: circle;
+  list-style-position: inside;
+  list-style-image: url(../img/certification/Oval.png);
+}
+
 ._no-webp .cercard__row{
   background: url(../img/certification/fon_cercard.png) 0 0/100% 100% no-repeat; }
 
