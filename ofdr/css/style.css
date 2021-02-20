@@ -168,6 +168,40 @@ body._lock {
   margin: 0 auto;
 }
 
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__column_col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.3%;
+          flex: 1 1 33.3%;
+  margin-right: 30px;
+}
+
+.form__column_col:last-child {
+  margin-right: 0;
+}
+
+.form label {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #516c9a;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -242,6 +276,15 @@ body._lock {
 .btn_cer:hover {
   -webkit-box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.854846);
           box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.854846);
+}
+
+.btn_certform {
+  width: 164px;
+  height: 46px;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
 }
 
 .select {
@@ -347,6 +390,7 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  width: 100%;
 }
 
 .input {
@@ -2136,6 +2180,7 @@ body.ie ._ibg img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #7d7d7d;
 }
 
 .bread-crumbs__item:first-child::before {
@@ -2289,6 +2334,17 @@ body.ie ._ibg img {
   line-height: 26px;
   color: #333333;
   width: 48.8rem;
+}
+
+._no-webp .certform{
+  background: url(../img/certification/form_fon.png) 50% 50%/100% 100% no-repeat; }
+
+.certform__header {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 51px;
+  color: #ffffff;
+  padding: 55px 0 25px 0;
 }
 
 .page {
@@ -2743,6 +2799,8 @@ body.ie ._ibg img {
 ._webp .edprog-slide__subtext::after{ background: url(../img/edprog/pics.webp) 0 0/contain no-repeat; }
 
 ._webp .cercard__row{ background: url(../img/certification/fon_cercard.webp) 0 0/100% 100% no-repeat; }
+
+._webp .certform{ background: url(../img/certification/form_fon.webp) 50% 50%/100% 100% no-repeat; }
 
 ._webp .ferst-screen{ background: url(../img/header/fon.webp) right no-repeat; }
 

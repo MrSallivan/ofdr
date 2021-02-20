@@ -1,8 +1,18 @@
 //<FORM ()>====================================================================================================
 .form {
 	&__row {
+		display: flex;
 	}
 	&__column {
+		display: flex;
+		&_col {
+			flex-direction: column;
+			flex: 1 1 33.3%;
+			margin-right: 30px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 	}
 	&__line {
 	}
@@ -11,6 +21,12 @@
 	&__button {
 	}
 	&__error {
+	}
+	label {
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 20px;
+		color: #516c9a;
 	}
 }
 
@@ -81,6 +97,14 @@
 		&:hover {
 			box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.854846);
 		}
+	}
+	&_certform {
+		width: 164px;
+		height: 46px;
+		font-weight: 800;
+		font-size: 15px;
+		line-height: 18px;
+		text-align: center;
 	}
 }
 //</BUTTONS>====================================================================================================
@@ -185,6 +209,7 @@ textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	width: 100%;
 }
 .input {
 	border-radius: 0 !important;

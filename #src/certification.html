@@ -185,15 +185,67 @@
 				</div>
 
 			</section>
-			<div class="pagging">
-				<div class="pagging__item">1</div>
-				<div class="pagging__item">2</div>
-				<div class="pagging__item">3</div>
-				<div class="pagging__item">4</div>
-				<div class="pagging__item">5</div>
-				<div class="pagging__item">...</div>
-				<div class="pagging__item">12</div>
-			</div>
+			<section class="certform">
+				<div class="_container">
+					<div class="certform__header">Удостоверение по безопасности</div>
+					<form class="form" action="#" method="POST">
+						<div class="form__row">
+							<div class="form__column  form__column_col">
+								<div class="form__line">
+									<div class="form__input">
+										<p><label for="fio">Ф.И.О. полностью</label></p>
+										<p><input id="fio" type="text"></p>
+									</div>
+								</div>
+								<div class="form__line">
+									<div class="form__input">
+										<p><label for="group">Группа электробезопасности (2,3,4,5)</label></p>
+										<p><input id="group" type="text"></p>
+									</div>
+								</div>
+							</div>
+							<div class="form__column form__column_col">
+								<div class="form__line">
+									<div class="form__input">
+										<p><label for="prof">Название должности/профессии</label></p>
+										<p><input id="prof" type="text"></p>
+									</div>
+								</div>
+								<div class="form__line">
+									<div class="form__input">
+										<p><label for="reason">Причина проверки (первичная или очередная)</label></p>
+										<p><input id="reason" type="text"></p>
+									</div>
+								</div>
+							</div>
+							<div class="form__column form__column_col">
+								<div class="form__line">
+									<div class="form__input">
+										<p><label for="work">Если Вы работаете укажите место работы</label></p>
+										<p><input id="work" type="text"></p>
+									</div>
+								</div>
+								<div class="form__line">
+									<div class="form__input">
+										<p><label for="date">Укажите дату выдачи удостоверения, которую прописать в
+												удостоверении</label></p>
+										<p><input id="date" type="text"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__column">
+								<p><input type="tel" placeholder="+7914......"></p>
+								<p><input type="email" placeholder="email"></p>
+								<p><input type="text"
+										placeholder="Адрес доставки готовых документов (город, адрес, номер телефона, ФИО)"></p>
+								<button class="btn btn_certform">Отправить заявку</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
 		</main>
 		@@include('_footer.html',{})
 	</div>

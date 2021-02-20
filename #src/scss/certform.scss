@@ -1,0 +1,12 @@
+.certform {
+	background: url(../img/certification/form_fon.png) 50% 50% / 100% 100% no-repeat;
+	// .certform__header
+	&__header {
+		font-weight: 800;
+		font-size: 40px;
+		line-height: 51px;
+		color: #ffffff;
+		padding: 55px 0 25px 0;
+	}
+}
+
