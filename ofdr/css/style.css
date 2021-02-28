@@ -174,10 +174,23 @@ body._lock {
   display: flex;
 }
 
+.form__row_first {
+  border-bottom: 1px solid #678bc7;
+}
+
+.form__row_last {
+  margin-top: 30px;
+  padding-bottom: 80px;
+}
+
 .form__column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .form__column_col {
@@ -189,17 +202,53 @@ body._lock {
       -ms-flex: 1 1 33.3%;
           flex: 1 1 33.3%;
   margin-right: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .form__column_col:last-child {
   margin-right: 0;
 }
 
-.form label {
+.form__line_last {
+  margin-bottom: 30px;
+}
+
+.form__line_first {
+  margin-bottom: 20px;
+}
+
+.form__label {
   font-weight: normal;
   font-size: 17px;
   line-height: 20px;
   color: #516c9a;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  height: 46px;
+}
+
+.form-input_tel {
+  width: 164px;
+}
+
+.form-input_email {
+  width: 164px;
+}
+
+.form-input_adr {
+  width: 555px;
+}
+
+.form-input input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  background: #ffffff;
 }
 
 .btn {
@@ -279,6 +328,7 @@ body._lock {
 }
 
 .btn_certform {
+  display: block;
   width: 164px;
   height: 46px;
   font-weight: 800;

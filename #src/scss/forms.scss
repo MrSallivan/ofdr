@@ -2,19 +2,36 @@
 .form {
 	&__row {
 		display: flex;
+		&_first {
+			border-bottom: 1px solid #678bc7;
+		}
+		&_last {
+			margin-top: 30px;
+			padding-bottom: 80px;
+		}
 	}
 	&__column {
 		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
 		&_col {
 			flex-direction: column;
 			flex: 1 1 33.3%;
 			margin-right: 30px;
+			justify-content: space-between;
 			&:last-child {
 				margin-right: 0;
 			}
 		}
 	}
 	&__line {
+		&_last {
+			margin-bottom: 30px;
+		}
+		&_first {
+			margin-bottom: 20px;
+		}
 	}
 	&__input {
 	}
@@ -22,11 +39,31 @@
 	}
 	&__error {
 	}
-	label {
+	&__label {
 		font-weight: normal;
 		font-size: 17px;
 		line-height: 20px;
 		color: #516c9a;
+		margin-bottom: 10px;
+	}
+}
+.form-input {
+	height: 46px;
+	&_tel {
+		width: 164px;
+	}
+	&_email {
+		width: 164px;
+	}
+	&_adr {
+		width: 555px;
+	}
+	input {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 2px;
+		background: #ffffff;
 	}
 }
 
@@ -99,6 +136,7 @@
 		}
 	}
 	&_certform {
+		display: block;
 		width: 164px;
 		height: 46px;
 		font-weight: 800;
