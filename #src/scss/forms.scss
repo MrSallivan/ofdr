@@ -49,6 +49,7 @@
 }
 .form-input {
 	height: 46px;
+
 	&_tel {
 		width: 164px;
 	}
@@ -64,6 +65,13 @@
 		height: 100%;
 		border-radius: 2px;
 		background: #ffffff;
+
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		color: #7b7b7b;
+		padding: 0 20px;
 	}
 }
 
