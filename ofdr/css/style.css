@@ -2650,8 +2650,52 @@ body.ie ._ibg img {
 
 @media (max-width: 767.98px) {
   ._container {
-    max-width: none;
-    padding: 0;
+    max-width: 540px;
+  }
+
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .form__column_bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .form-input_tel {
+    width: 100%;
+  }
+
+  .form-input_tel {
+    margin-bottom: 20px;
+  }
+
+  .form-input_email {
+    width: 100%;
+  }
+
+  .form-input_email {
+    margin-bottom: 20px;
+  }
+
+  .form-input_adr {
+    width: 100%;
+  }
+
+  .form-input_adr {
+    margin-bottom: 20px;
+  }
+
+  .form-input input {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0 10px;
+    text-align: center;
   }
 
   ._swiper {
