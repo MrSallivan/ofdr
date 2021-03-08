@@ -240,7 +240,7 @@ body._lock {
 }
 
 .form-input_adr {
-  width: 555px;
+  width: 450px;
 }
 
 .form-input input {
@@ -2434,6 +2434,23 @@ body.ie ._ibg img {
     max-width: 970px;
   }
 
+  .form__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .form__column_col {
+    margin-right: 10px;
+  }
+
+  .form__column_col:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .form-input_adr input {
+    font-size: 11px;
+  }
+
   .top__social {
     margin-right: 2rem;
   }
@@ -2486,6 +2503,34 @@ body.ie ._ibg img {
 @media (max-width: 991.98px) {
   ._container {
     max-width: 750px;
+  }
+
+  .form__column_bottom {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .form-input_tel {
+    width: 100px;
+  }
+
+  .form-input_email {
+    width: 100px;
+  }
+
+  .form-input_adr {
+    width: 400px;
+  }
+
+  .form-input input {
+    font-size: 10px;
+    padding: 0 10px;
   }
 
   .btn {

@@ -9,11 +9,21 @@
 			margin-top: 30px;
 			padding-bottom: 80px;
 		}
+		@media (max-width: $md1+px) {
+			flex-wrap: wrap;
+		}
 	}
 	&__column {
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
+		&_bottom {
+			@media (max-width: $md2+px) {
+				align-items: center;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+		}
 
 		&_col {
 			flex-direction: column;
@@ -22,6 +32,12 @@
 			justify-content: space-between;
 			&:last-child {
 				margin-right: 0;
+			}
+			@media (max-width: $md1+px) {
+				margin-right: 10px;
+				&:nth-child(2) {
+					margin-right: 0;
+				}
 			}
 		}
 	}
@@ -52,12 +68,26 @@
 
 	&_tel {
 		width: 164px;
+		@media (max-width: $md2+px) {
+			width: 100px;
+		}
 	}
 	&_email {
 		width: 164px;
+		@media (max-width: $md2+px) {
+			width: 100px;
+		}
 	}
 	&_adr {
-		width: 555px;
+		width: 450px;
+		@media (max-width: $md2+px) {
+			width: 400px;
+		}
+		input {
+			@media (max-width: $md1+px) {
+				font-size: 11px;
+			}
+		}
 	}
 	input {
 		display: block;
@@ -72,6 +102,10 @@
 		line-height: 16px;
 		color: #7b7b7b;
 		padding: 0 20px;
+		@media (max-width: $md2+px) {
+			font-size: 10px;
+			padding: 0 10px;
+		}
 	}
 }
 
