@@ -20,9 +20,7 @@
 	&__top {
 		display: flex;
 		justify-content: space-between;
-		@media (max-width: $md3+px) {
-			padding: 0 10px;
-		}
+		
 	}
 	// .header__bottom
 	&__bottom {
@@ -212,6 +210,9 @@
 		@media (max-width: $md4+px) {
 			font-size: 1.3rem;
 		}
+		@media (max-width:$md4+px){
+			font-size: 1.1rem;
+		}
 
 		&::before {
 			content: "";
@@ -227,6 +228,9 @@
 				height: 1.2rem;
 				background: url(../img/header/icons/call-answer.png) 0 0 / contain no-repeat;
 				left: -2rem;
+			}
+			@media (max-width:$md4+px){
+				left: -1.5rem;
 			}
 		}
 	}
@@ -256,6 +260,9 @@
 				height: 1.2rem;
 				background: url(../img/header/icons/mail.png) 0 0 / contain no-repeat;
 				left: 0.1rem;
+			}
+			@media (max-width:$md4+px){
+				left: -1.5rem;
 			}
 		}
 	}

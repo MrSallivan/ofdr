@@ -2541,6 +2541,13 @@ body.ie ._ibg img {
     line-height: 13px;
   }
 
+  .btn_certform {
+    height: 46px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
   .select__title {
     font-size: 18px;
   }
@@ -2646,6 +2653,15 @@ body.ie ._ibg img {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+
+  .cercard__title {
+    font-size: 25px;
+    line-height: 127.5%;
+  }
+
+  .cercard__contenttext {
+    width: 40rem;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2698,12 +2714,17 @@ body.ie ._ibg img {
     text-align: center;
   }
 
-  ._swiper {
-    width: 740px;
+  .btn_certform {
+    width: 164px;
+    height: 46px;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
   }
 
-  .header__top {
-    padding: 0 10px;
+  ._swiper {
+    width: 740px;
   }
 
   .top__logozone {
@@ -2808,15 +2829,33 @@ body.ie ._ibg img {
   .allnews {
     padding: 0 20px;
   }
+
+  .cercard__col:last-child {
+    display: none;
+  }
 }
 
 @media (max-width: 560px) {
+  ._container {
+    max-width: 480px;
+    padding: 0 10px;
+  }
+
   .btn {
     width: 10rem;
     height: 3.5rem;
     font-weight: 600;
     font-size: 10px;
     line-height: 13px;
+  }
+
+  .btn_certform {
+    width: 164px;
+    height: 46px;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
   }
 
   ._swiper {
@@ -2835,8 +2874,20 @@ body.ie ._ibg img {
     font-size: 1.3rem;
   }
 
+  .call__numlink {
+    font-size: 1.1rem;
+  }
+
+  .call__numlink::before {
+    left: -1.5rem;
+  }
+
   .call__emaillink {
     font-size: 1.1rem;
+  }
+
+  .call__emaillink::before {
+    left: -1.5rem;
   }
 
   .col_services {
@@ -2883,6 +2934,14 @@ body.ie ._ibg img {
   .news__card-wrapper:last-child {
     margin-bottom: 0;
   }
+
+  .certifications__content {
+    padding-bottom: 2rem;
+  }
+
+  .certform ._container {
+    padding: 0 1rem;
+  }
 }
 
 @media (max-width: 495px) {
@@ -2918,12 +2977,21 @@ body.ie ._ibg img {
         -ms-flex-align: center;
             align-items: center;
   }
+
+  .bread-crumbs {
+    font-size: 10px;
+    line-height: 55.55556%;
+  }
 }
 
 @media (max-width: 320px) {
   ._swiper {
     width: 320px;
     margin-left: 35px;
+  }
+
+  .certform__header {
+    text-align: center;
   }
 }
 

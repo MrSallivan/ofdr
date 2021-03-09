@@ -80,7 +80,7 @@
 		@media (max-width: $md3+px) {
 			width: 100%;
 		}
-		@media (max-width:$md3+px){
+		@media (max-width: $md3+px) {
 			margin-bottom: 20px;
 		}
 	}
@@ -92,7 +92,7 @@
 		@media (max-width: $md3+px) {
 			width: 100%;
 		}
-		@media (max-width:$md3+px){
+		@media (max-width: $md3+px) {
 			margin-bottom: 20px;
 		}
 	}
@@ -104,7 +104,7 @@
 		@media (max-width: $md3+px) {
 			width: 100%;
 		}
-		@media (max-width:$md3+px){
+		@media (max-width: $md3+px) {
 			margin-bottom: 20px;
 		}
 		input {
@@ -215,6 +215,28 @@
 		font-size: 15px;
 		line-height: 18px;
 		text-align: center;
+		@media (max-width: $md2+px) {
+			height: 46px;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 18px;
+		}
+		@media (max-width: $md3+px) {
+			width: 164px;
+			height: 46px;
+			font-weight: 800;
+			font-size: 15px;
+			line-height: 18px;
+			text-align: center;
+		}
+		@media (max-width: $md4+px) {
+			width: 164px;
+			height: 46px;
+			font-weight: 800;
+			font-size: 15px;
+			line-height: 18px;
+			text-align: center;
+		}
 	}
 }
 //</BUTTONS>====================================================================================================

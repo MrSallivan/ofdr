@@ -40,5 +40,10 @@
 		&:last-child {
 			color: #86afef;
 		}
+		
 	}
+	@media (max-width:$md5+px){
+			font-size: 10px;
+			line-height: 10 / 18 * 100%;
+		}
 }

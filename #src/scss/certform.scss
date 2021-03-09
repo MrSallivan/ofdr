@@ -7,6 +7,13 @@
 		line-height: 51px;
 		color: #ffffff;
 		padding: 55px 0 25px 0;
+		@media (max-width:$md6+px){
+			text-align: center;
+		}
+	}
+	._container {
+		@media (max-width: $md4+px) {
+			padding: 0 1rem;
+		}
 	}
 }
-
