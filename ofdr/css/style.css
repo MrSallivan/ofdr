@@ -1366,6 +1366,10 @@ body.ie ._ibg img {
   left: 0.5rem;
 }
 
+.header-menu {
+  z-index: 1000;
+}
+
 .header-menu__link {
   display: inline-block;
   color: #333333;
@@ -2838,7 +2842,6 @@ body.ie ._ibg img {
 @media (max-width: 560px) {
   ._container {
     max-width: 480px;
-    padding: 0 10px;
   }
 
   .btn {

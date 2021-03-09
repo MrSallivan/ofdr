@@ -269,6 +269,7 @@
 }
 
 .header-menu {
+	z-index: 1000;
 	@media (max-width: $md3+px) {
 		position: absolute;
 		background-color: #f6f6f6;
