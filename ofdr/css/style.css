@@ -1392,6 +1392,10 @@ body.ie ._ibg img {
           justify-content: space-between;
 }
 
+.header-menu._active {
+  left: 0;
+}
+
 .header-menu__icon {
   display: none;
 }
@@ -2842,6 +2846,7 @@ body.ie ._ibg img {
 @media (max-width: 560px) {
   ._container {
     max-width: 480px;
+    padding: 0 10px;
   }
 
   .btn {
