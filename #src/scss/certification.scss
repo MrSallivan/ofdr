@@ -1,5 +1,4 @@
 .certifications {
-	
 	// .certifications__cercard
 	&__cercard {
 	}
@@ -10,7 +9,7 @@
 		line-height: 24px;
 		color: $textcolor;
 		padding-bottom: 5rem;
-		@media (max-width:$md4+px){
+		@media (max-width: $md4+px) {
 			padding-bottom: 2rem;
 		}
 
@@ -50,9 +49,21 @@
 		padding: 35px 0 50px 35px;
 		background-color: #fafafb;
 		background: url(../img/certification/fon_cercard.png) 0 0/100% 100% no-repeat;
+
+		@media (max-width: $md3+px) {
+			justify-content: center;
+			padding: 35px 0;
+			background-image: none !important;
+		}
 	}
 	// .cercard__col
 	&__col {
+		&:first-child {
+			@media (max-width: $md3+px) {
+				padding: 15px;
+				border: 2px $themeColor solid;
+			}
+		}
 		&:last-child {
 			@media (max-width: $md3+px) {
 				display: none;
@@ -143,10 +154,5 @@
 		@media (max-width: $md2+px) {
 			width: 40rem;
 		}
-	}
-}
-.btn {
-	// .btn_cer
-	&_cer {
 	}
 }

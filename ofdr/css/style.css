@@ -2838,6 +2838,19 @@ body.ie ._ibg img {
     padding: 0 20px;
   }
 
+  .cercard__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 35px 0;
+    background-image: none !important;
+  }
+
+  .cercard__col:first-child {
+    padding: 15px;
+    border: 2px #007aff solid;
+  }
+
   .cercard__col:last-child {
     display: none;
   }
