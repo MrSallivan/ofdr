@@ -144,8 +144,15 @@
 	flex: 0 1 459px;
 	background-color: #87b0ee;
 	opacity: 0.8;
+	padding: 0 65px 0 65px;
 	// .form-cont__header
 	&__header {
+		font-weight: 800;
+		@include adaptiv-font(30, 16, 1);
+		line-height: 38px;
+		text-align: center;
+		margin-top: 2.5rem;
+		color: #ffffff;
 	}
 }
 
