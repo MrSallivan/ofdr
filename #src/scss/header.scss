@@ -184,6 +184,13 @@
 	@media (max-width: $md5+px) {
 		display: none;
 	}
+	&_cont {
+		text-align: left;
+		margin-bottom: 60px;
+		@media (max-width: $md5+px) {
+			display: flex;
+		}
+	}
 
 	a {
 		display: block;
@@ -231,6 +238,24 @@
 				left: -1.5rem;
 			}
 		}
+		&_cont {
+			padding-left: 30px;
+			@media (max-width: $md2+px) {
+				font-size: 1.5rem;
+			}
+			&::before {
+				left: 0;
+				@media (max-width: $md2+px) {
+					width: 1.2rem;
+					height: 1.2rem;
+					left: 0;
+				}
+				@media (max-width: $md4+px) {
+					left: 0;
+					top: -0.5px;
+				}
+			}
+		}
 	}
 	// .call__emaillink
 	&__emaillink {
@@ -261,6 +286,24 @@
 			}
 			@media (max-width: $md4+px) {
 				left: -1.5rem;
+			}
+		}
+		&_cont {
+			padding-left: 30px;
+			@media (max-width: $md2+px) {
+				font-size: 1.5rem;
+			}
+			&::before {
+				left: 0;
+				@media (max-width: $md2+px) {
+					width: 1.2rem;
+					height: 1.2rem;
+					left: 0;
+				}
+				@media (max-width: $md4+px) {
+					left: 0;
+					top:1px;
+				}
 			}
 		}
 	}
@@ -304,7 +347,6 @@
 	}
 
 	&._active {
-		
 		left: 0;
 		@media (max-width: $md3+px) {
 			display: block;

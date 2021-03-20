@@ -68,8 +68,8 @@ body {
 	&_no-fon {
 		background: none;
 	}
-	&_contacts {
-		background: url(../img/header/fon_decor.svg) 5rem 6rem / 1300px auto no-repeat;
+	&_cont {
+		background: none;
 	}
 }
 //</ОБОЛОЧКА>===========================================================================================================
@@ -118,13 +118,17 @@ body {
 @import "bread-crumbs";
 @import "certification";
 @import "certform";
-
+@import "mixins";
+@import "contacts";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
 	flex: 1 1 auto;
+	&_cont{
+		background: url(../img/contacts/map_of_russia.png) 120px 20px / contain no-repeat;
+	}
 }
 .ferst-screen {
 	background: url(../img/header/fon.png) right no-repeat;

@@ -163,8 +163,8 @@ body._lock {
   background: none;
 }
 
-.wrapper_contacts {
-  background: url(../img/header/fon_decor.svg) 5rem 6rem/1300px auto no-repeat;
+.wrapper_cont {
+  background: none;
 }
 
 ._container {
@@ -259,6 +259,14 @@ body._lock {
   line-height: 16px;
   color: #7b7b7b;
   padding: 0 20px;
+}
+
+.form-cont {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 459px;
+          flex: 0 1 459px;
+  background-color: #87b0ee;
+  opacity: 0.8;
 }
 
 .btn {
@@ -1326,6 +1334,11 @@ body.ie ._ibg img {
           justify-content: space-between;
 }
 
+.call_cont {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
 .call a {
   display: block;
   color: #333333;
@@ -1351,6 +1364,14 @@ body.ie ._ibg img {
   left: -2.4rem;
 }
 
+.call__numlink_cont {
+  padding-left: 30px;
+}
+
+.call__numlink_cont::before {
+  left: 0;
+}
+
 .call__emaillink {
   font-size: 1.7rem;
   font-weight: 500;
@@ -1368,6 +1389,14 @@ body.ie ._ibg img {
   height: 1.6rem;
   top: 2px;
   left: 0.5rem;
+}
+
+.call__emaillink_cont {
+  padding-left: 30px;
+}
+
+.call__emaillink_cont::before {
+  left: 0;
 }
 
 .header-menu {
@@ -1929,6 +1958,10 @@ body.ie ._ibg img {
   padding-top: 4rem;
 }
 
+.pagetitle_left {
+  text-align: left;
+}
+
 .example {
   background-color: #f6f6f6;
   padding: 0 10px 7rem;
@@ -2407,6 +2440,10 @@ body.ie ._ibg img {
 ._no-webp .certform{
   background: url(../img/certification/form_fon.png) 50% 50%/100% 100% no-repeat; }
 
+.certform {
+  padding-top: 3rem;
+}
+
 .certform__header {
   font-weight: 800;
   font-size: 40px;
@@ -2415,11 +2452,81 @@ body.ie ._ibg img {
   padding: 55px 0 25px 0;
 }
 
+.contacts__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.contacts__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__col_right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts__text {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 20px 0 40px 0;
+}
+
+.qr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4rem;
+}
+
+.qr__item {
+  margin-right: 30px;
+}
+
+.qr__item:last-child {
+  margin-right: 0;
+}
+
+.qr__title {
+  font-weight: bold;
+  color: #333333;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+  margin-bottom: 3rem;
+}
+
+.qr__text {
+  line-height: 22px;
+  font-size: calc(10px + 6 * ((100vw - 320px) / 1600));
+  color: #333333;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+
+._no-webp .page_cont{
+  background: url(../img/contacts/map_of_russia.png) 120px 20px/contain no-repeat; }
 
 ._no-webp .ferst-screen{
   background: url(../img/header/fon.png) right no-repeat; }
@@ -2627,6 +2734,16 @@ body.ie ._ibg img {
     left: -2rem;
   }
 
+  .call__numlink_cont {
+    font-size: 1.5rem;
+  }
+
+  .call__numlink_cont::before {
+    width: 1.2rem;
+    height: 1.2rem;
+    left: 0;
+  }
+
   .call__emaillink {
     font-size: 1.3rem;
   }
@@ -2638,6 +2755,16 @@ body.ie ._ibg img {
     width: 1.2rem;
     height: 1.2rem;
     left: 0.1rem;
+  }
+
+  .call__emaillink_cont {
+    font-size: 1.5rem;
+  }
+
+  .call__emaillink_cont::before {
+    width: 1.2rem;
+    height: 1.2rem;
+    left: 0;
   }
 
   .header-menu__link {
@@ -2907,12 +3034,22 @@ body.ie ._ibg img {
     left: -1.5rem;
   }
 
+  .call__numlink_cont::before {
+    left: 0;
+    top: -0.5px;
+  }
+
   .call__emaillink {
     font-size: 1.1rem;
   }
 
   .call__emaillink::before {
     left: -1.5rem;
+  }
+
+  .call__emaillink_cont::before {
+    left: 0;
+    top: 1px;
   }
 
   .col_services {
@@ -2986,6 +3123,12 @@ body.ie ._ibg img {
     display: none;
   }
 
+  .call_cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .header-menu__list {
     margin-bottom: 15px;
   }
@@ -3039,6 +3182,8 @@ body.ie ._ibg img {
 ._webp .cercard__row{ background: url(../img/certification/fon_cercard.webp) 0 0/100% 100% no-repeat; }
 
 ._webp .certform{ background: url(../img/certification/form_fon.webp) 50% 50%/100% 100% no-repeat; }
+
+._webp .page_cont{ background: url(../img/contacts/map_of_russia.webp) 120px 20px/contain no-repeat; }
 
 ._webp .ferst-screen{ background: url(../img/header/fon.webp) right no-repeat; }
 
