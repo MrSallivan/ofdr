@@ -78,7 +78,8 @@
 							<div class="contacts__text">Мы работаем по всей России</div>
 							<div class="call call_cont">
 								<a class="call__numlink call__numlink_cont" href="tel:88000000000">8 800 000-00-00</a>
-								<a class="call__emaillink call__emaillink_cont" href="mailto:email@email.com">email@email.com</a>
+								<a class="call__emaillink call__emaillink_cont"
+									href="mailto:email@email.com">email@email.com</a>
 							</div>
 							<div class="social">
 								<div class="social__item social__item_wsp">
@@ -110,13 +111,18 @@
 							</article>
 						</div>
 						<div class="contacts__col contacts__col_right">
-							<form  class="form-cont" action="#" method="POST">
+							<form class="form-cont" action="#" method="POST">
 								<div class="form-cont__header">Форма обратной связи</div>
+								<p class="form-input form-input_adr"><input type="text" placeholder="Как к вам обращаться?"></p>
+								<textarea placeholder="желаемые документы" rows="5"></textarea>
+								<p class="form-input form-input_tel"><input type="tel" placeholder="+7(___)-___-__-__"></p>
+								<p class="form-input form-input_email"><input type="email" placeholder="email"></p>
+								<button class="btn btn_cont">Отправить заявку</button>
 							</form>
 						</div>
 					</div>
 
-				</div>     
+				</div>
 			</section>
 		</main>
 		@@include('_footer.html',{})

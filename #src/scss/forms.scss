@@ -152,7 +152,18 @@
 		line-height: 38px;
 		text-align: center;
 		margin-top: 2.5rem;
+		margin-bottom: 3rem;
 		color: #ffffff;
+	}
+	.form-input {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	textarea {
+		display: block;
+		resize: none;
+		margin-bottom: 15px;
+		padding: 1rem 2rem;
 	}
 }
 
@@ -230,6 +241,7 @@
 		font-size: 15px;
 		line-height: 18px;
 		text-align: center;
+
 		@media (max-width: $md2+px) {
 			height: 46px;
 			font-weight: 500;
@@ -252,6 +264,10 @@
 			line-height: 18px;
 			text-align: center;
 		}
+	}
+	&_cont {
+		display: block;
+		margin: 3rem auto;
 	}
 }
 //</BUTTONS>====================================================================================================
